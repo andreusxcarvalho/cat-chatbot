@@ -1,0 +1,16 @@
+# Environment Variables
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node.js
+node_modules/
+*.log
+
+# System Files
+.DS_Store
+.Trash/
+
