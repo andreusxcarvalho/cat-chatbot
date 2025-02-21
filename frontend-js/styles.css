@@ -1,0 +1,82 @@
+/* Reset */
+body {
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat History */
+.chat-box {
+    background: #ecf0f1;
+    border-radius: 10px;
+    padding: 15px;
+    height: 700px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+/* Messages */
+.user-message {
+    background: #3498db;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.bot-message {
+    background: #2ecc71;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+/* Input Field */
+.input-container {
+    margin-top: 10px;
+}
+
+#user-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+button {
+    background: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #c0392b;
+}
+
+/* Cat Image */
+.cat-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
