@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const catImageContainer = document.getElementById("cat-image-container");
     const errorMessage = document.getElementById("error-message");
 
+    // ✅ Replace with your actual backend URL from Render
+    const BACKEND_URL = "https://cat-chatbot.onrender.com";
+
     // Function to append messages to the chatbox
     function addMessage(sender, text, className) {
         const messageElement = document.createElement("p");
@@ -42,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const botMessage = addMessage("Bot", "Bot is typing...", "bot-message");
 
         try {
-            const response = await fetch("http://localhost:8000/chat", {
+            const response = await fetch(`${BACKEND_URL}/chat`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ message: message }),
@@ -82,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Handle fetching cat image (for button click)
     catButton.addEventListener("click", async function () {
         try {
-            const response = await fetch("http://localhost:8000/cat");
+            const response = await fetch(`${BACKEND_URL}/cat`);
             const data = await response.json();
 
             if (data.image_url) {
@@ -94,5 +97,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
 
